@@ -1,6 +1,6 @@
 package Net::HTTP::Spore::Middleware::BaseUrl;
 
-#ABSTRACT: Spore Middleware to change the base_url
+#ABSTRACT: Spore Middleware to change the base_url on the fly
 
 use Moose;
 extends 'Net::HTTP::Spore::Middleware';
@@ -19,11 +19,11 @@ __END__
 
 =head1 NAME
 
-Net::HTTP::Spore::Middleware::BaseUrl - Spore Middleware to change the base_url
+Net::HTTP::Spore::Middleware::BaseUrl - Spore Middleware to change the base_url on the fly
 
 =head1 SYNOPSIS
  
     my $client = Net::HTTP::Spore->new_from_spec('api.json');
-    $client->enable( 'BaseUrl'
-        base_url  => 'http://www.perl.org',
+    $client->enable( 'BaseUrl',
+        base_url  => 'www.perl.org',
     );
