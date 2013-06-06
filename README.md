@@ -5,7 +5,7 @@ Spore Middleware to change the base_url
 
 ```perl
     my $client = Net::HTTP::Spore->new_from_spec('api.json');
-    $client->enable( 'BaseUrl'
-        base_url  => 'http://www.perl.org',
+    $client->enable( 'BaseUrl',
+        base_url  => 'http://www.perl.org'
     );
 ```
