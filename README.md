@@ -1,7 +1,7 @@
 Net::HTTP::Spore::Middleware::BaseUrl
 =====================================
 
-Spore Middleware to change the base_url
+Spore Middleware to change the base_url on the fly
 
 ```perl
     my $client = Net::HTTP::Spore->new_from_spec('api.json');
